@@ -139,11 +139,13 @@ resource "aws_instance" "web-server-instance" {
 
   user_data = <<-EOF
               #!/bin/bash
-              sudo apt update -y
-              sudo apt install nginx -y
+              sudo 
+              sudo yum install nginx -y
               sudo systemctl start nginx
               sudo systemctl enable nginx
               sudo bash -c 'echo Success fully installed everything > /var/www/html/index.html'
+              nginx -v
+              curl localhost
               EOF
   tags = {
     Name = "web-server"
