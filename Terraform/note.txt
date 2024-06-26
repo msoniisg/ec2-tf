@@ -1,6 +1,3 @@
-
-terraform commands 
-
 1. Create vpc
 2. Create internet gateway 
 3. Create custom route table 
