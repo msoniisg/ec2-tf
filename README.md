@@ -18,3 +18,24 @@
     ```
 
 ## Execute Terraform script
+
+1. Initialize terraform code 
+    ```
+    terraform init
+    ```
+
+2. Validate and Format code 
+    ```
+    terraform validate 
+    terraform fmt
+    ```
+
+3. Prepare plan 
+    ```
+    terraform plan
+    ```
+
+4. Apply code
+    ```
+    terraform apply 
+    ```
